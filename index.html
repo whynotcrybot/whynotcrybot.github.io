@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<title>WhynotCrybot?</title>
+	<link rel='stylesheet' href='css/Base.css' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800,300,400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div id='menu'>
+		<a href='#'>
+			<i></i>
+		</a>
+		<ul>
+			<li><a href='#about'>About me</a></li>
+			<li><a href='#links'>Links</a></li>
+		</ul>
+	</div>
+	
+	<div class='Surface'>
+		<div class='Header'>
+			<div class='bg'></div>
+			<div class='wrapper'>
+				<div class='greeting'>
+					<h1>whynotcrybot</h1>
+					<h4 class='description'>I create stuff.</h4>
+				</div>
+			</div>
+		</div>
+		
+		<div class='footer' id='links'>
+			<div class='wrapper'>
+				<ul>
+					<li><a target='_blank' href='https://vk.com/whynotcrybot'>vk</a></li>
+					<li><a target='_blank' href='http://twitter.com/whynotcrybot'>twitter</a></li>
+				</ul>
+				<span>Designed and developed by <a href='/'>me</a></span>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type='text/javascript' src='js/jquery.min.js'></script>
+<script type='text/javascript' src='js/jquery.scrollTo.js'></script>
+<script>
+$(function(){
+	$('body').on('click', '.greeting a', function(e){
+		e.preventDefault();
+		$.scrollTo($(e.target).parent().attr('href'), 500);
+	});
+});
+</script>
+</html>
