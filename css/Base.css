@@ -21,7 +21,7 @@ a:hover{
 }
 
 #menu {
-	dispay:none;
+	display: none;
 	position: fixed;
 	top: 30px;
 	left: 30px;
